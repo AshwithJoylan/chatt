@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email_icon"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawableLeft="@drawable/password_icon"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:id="@+id/forgot_password_tv"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:transitionName="imageTransition"
+        android:text="Log In"/>
+
+    <TextView
+        android:id="@+id/to_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

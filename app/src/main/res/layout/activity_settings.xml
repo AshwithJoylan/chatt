@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.SettingsActivity"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/settingsProfileImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settingsProfileImage"
+        android:id="@+id/settingsDisplayName"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi there. I'm using Text. app"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settingsDisplayName"
+        android:id="@+id/settingProfileStatus"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Info"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:id="@+id/settingsEditInfoButton"
+        android:layout_below="@+id/settingProfileStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Back"
+       android:textColor="@color/white"
+       android:textSize="20dp"
+       android:layout_below="@+id/settingsEditInfoButton"
+       android:id="@+id/settingsBackButton"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
